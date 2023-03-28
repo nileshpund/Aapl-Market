@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { Platform } from '@ionic/angular';
 import { Network } from '@ionic-native/network/ngx';
+import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,7 @@ import { Network } from '@ionic-native/network/ngx';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Inbox', url: '/folder/Inbofxc', icon: 'mail' },
+    { title: 'Inbox', url: '/folder/Inbox', icon: 'mail' },
     { title: 'Outbox', url: '/folder/Outbox', icon: 'paper-plane' },
     { title: 'Favorites', url: '/folder/Favorites', icon: 'heart' },
     { title: 'Archived', url: '/folder/Archived', icon: 'archive' },
@@ -26,7 +27,8 @@ export class AppComponent {
     // public _app: App,
     public _platform: Platform,
     public _SplashScreen: SplashScreen,
-    private network: Network
+    private network: Network,
+    private statusBar: StatusBar
     ) {
     this.initializeApp();
     this.online = navigator.onLine;
@@ -34,7 +36,9 @@ export class AppComponent {
 
   initializeApp() {
     this._platform.ready().then(() => {
-      // do whatever you need to do here.
+      this.statusBar.styleDefault();
+      this.statusBar.overlaysWebView(false);
+      this.statusBar.backgroundColorByHexString('#e97109');
       setTimeout(() => {
         this._SplashScreen.hide();
       }, 100);
