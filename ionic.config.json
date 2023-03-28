@@ -1,5 +1,7 @@
 {
-  "name": "myApp",
-  "integrations": {},
+  "name": "aaplMarket",
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
