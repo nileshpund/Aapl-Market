@@ -3,6 +3,10 @@ import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { Platform } from '@ionic/angular';
 import { Network } from '@ionic-native/network/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { Observable, Observer, fromEvent, merge } from 'rxjs';
+import { map } from 'rxjs/operators';
+import { ModalController } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-root',
@@ -22,16 +26,29 @@ export class AppComponent {
 
   public online: boolean = false;
   public backOnline: boolean = false;
+  onlineMessage: string = '';
+  isOnline: boolean = false;
 
   constructor(
     // public _app: App,
     public _platform: Platform,
     public _SplashScreen: SplashScreen,
     private network: Network,
-    private statusBar: StatusBar
-    ) {
+    private statusBar: StatusBar,
+    private modalController: ModalController
+  ) {
     this.initializeApp();
     this.online = navigator.onLine;
+    this.createOnline$().subscribe((isOnline) => {
+      this.isOnline = isOnline
+      console.log(isOnline);
+      if (isOnline) {
+        this.onlineMessage = 'You are connected to internet';
+      } else {
+        this.onlineMessage =
+          'Connection lost, Please check your internet connection.';
+      }
+    });
   }
 
   initializeApp() {
@@ -45,42 +62,16 @@ export class AppComponent {
     });
   }
 
-  checkNetwork() {
-    window.addEventListener('offline', () => {
-      this.online = false;
-    });
-    window.addEventListener('online', () => {
-      this.online = true;
-      this.backOnline = true;
-      setTimeout(data => {
-        this.backOnline = false;
-      }, 2000);
-    });
-    // watch network for a disconnection
-    this.network.onDisconnect().subscribe(() => {
-      console.log('network was disconnected :-(');
-      this.online = false;
-    });
-
-    // stop disconnect watch
-    // disconnectSubscription.unsubscribe();
-
-
-    // watch network for a connection
-    this.network.onConnect().subscribe(() => {
-      console.log('network connected!');
-      if (this.online == false)
-        this.backOnline = true;
-      this.online = true;
-
-      // We just got a connection but we need to wait briefly
-      // before we determine the connection type. Might need to wait.
-      // prior to doing any api requests as well.
-      setTimeout(() => {
-        this.backOnline = false;
-      }, 3000);
-    });
-
+  createOnline$() {
+    return merge(
+      fromEvent(window, 'offline').pipe(map(() => false)),
+      fromEvent(window, 'online').pipe(map(() => true)),
+      new Observable((sub: Observer<boolean>) => {
+        sub.next(navigator.onLine);
+        sub.complete();
+      })
+    );
   }
+
 
 }
