@@ -6,6 +6,8 @@
 .tmp
 *.tmp
 *.tmp.*
+package.json
+package-lock.json
 UserInterfaceState.xcuserstate
 $RECYCLE.BIN/
 
