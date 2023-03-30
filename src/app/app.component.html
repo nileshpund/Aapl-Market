@@ -27,10 +27,10 @@
     <ion-router-outlet id="main-content"></ion-router-outlet>
   </ion-split-pane>
 </ion-app>
-<ion-footer *ngIf="!online" class="network">
+<ion-footer class="network" *ngIf="!isOnline">
   <div class="footerBg">
     <ion-toolbar class="network-toolbar" position="bottom">
-      <p>No internet connection</p>
+      <p>{{onlineMessage}}</p>
     </ion-toolbar>
   </div>
 </ion-footer>
