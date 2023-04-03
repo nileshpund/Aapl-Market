@@ -5,6 +5,7 @@ import { HomePage } from './home.page';
 import { ShopComponent } from './shop/shop.component';
 import { ShopListComponent } from './shop/shop-list/shop-list.component';
 import { LocationComponent } from './location/location.component';
+import { ShopDetailComponent } from './shop/shop-detail/shop-detail.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,10 @@ const routes: Routes = [
       {
         path:"shop-list",
         component: ShopListComponent
+      },
+      {
+        path:"shop-details",
+        component: ShopDetailComponent
       },
       {
         path:"location",

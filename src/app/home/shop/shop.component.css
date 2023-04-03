@@ -11,6 +11,9 @@ ion-icon {
   ion-card-title {
     font-size: 13px;
   }
+  ion-tab-button ion-icon:hover{
+    color:rgb(245, 103, 37); 
+  }
   
   ion-searchbar.custom {
     margin-left: -13px;
