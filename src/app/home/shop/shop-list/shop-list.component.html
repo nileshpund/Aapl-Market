@@ -1,20 +1,10 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-searchbar class="custom" placeholder="Search Your Product"></ion-searchbar>
-    <ion-buttons slot="end" large>
-      <ion-icon name="cart-sharp"></ion-icon>
-    </ion-buttons>
-    <ion-buttons slot="end" large>
-      <ion-icon name="notifications-sharp"></ion-icon>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
 <ion-content>
   <ion-row>
     <ion-col>
       <ion-list>
         <ion-item>
-          <ion-select label="Action Sheet" [interfaceOptions]="categoryActionSheetOptions" interface="action-sheet" placeholder="Select Category">
+          <ion-select label="Action Sheet" [interfaceOptions]="categoryActionSheetOptions" interface="action-sheet"
+            placeholder="Select Category">
             <ion-select-option value="Clothes">Clothes</ion-select-option>
             <ion-select-option value="Supermarkets">Supermarkets</ion-select-option>
             <ion-select-option value="blue">Blue</ion-select-option>
@@ -25,7 +15,8 @@
     <ion-col>
       <ion-list>
         <ion-item>
-          <ion-select label="Action Sheet" [interfaceOptions]="distanceActionSheetOptions" interface="action-sheet" placeholder="Select Distance">
+          <ion-select label="Action Sheet" [interfaceOptions]="distanceActionSheetOptions" interface="action-sheet"
+            placeholder="Select Distance">
             <ion-select-option value="10">10 Km</ion-select-option>
             <ion-select-option value="20">20 Km</ion-select-option>
             <ion-select-option value="30">30 Km</ion-select-option>
@@ -49,7 +40,7 @@
           <ion-card-title>Pizza Casamla</ion-card-title>
           <span><ion-icon name="star-sharp" small></ion-icon><b>5</b></span>
 
-          <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle> -->
+          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
         </ion-card-header>
 
         <ion-card-content class="content-sharp">
@@ -101,15 +92,3 @@
       </ion-card></ion-col>
   </ion-row>
 </ion-content>
-
-<ion-footer>
-  <ion-toolbar>
-    <ion-row class="ion-toolbar">
-      <ion-col> <ion-icon name="home-sharp"></ion-icon></ion-col>
-      <ion-col> <ion-icon name="search-sharp"></ion-icon></ion-col>
-      <ion-col><ion-icon name="apps-sharp"></ion-icon></ion-col>
-      <ion-col><ion-icon name="cart-sharp"></ion-icon></ion-col>
-      <ion-col><ion-icon name="person-circle-sharp"></ion-icon></ion-col>
-    </ion-row>
-  </ion-toolbar>
-</ion-footer>
