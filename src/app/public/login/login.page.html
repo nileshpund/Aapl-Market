@@ -1,6 +1,7 @@
-<ion-header>
-  <p class="ion-text-right" routerLink="/landing-page" >Skip</p>
-</ion-header>
+<!-- <ion-header>
+</ion-header> -->
+<p class="ion-text-right" id="skip" routerLink="/home/shop" >Skip</p>
+
 <ion-content class="ion-padding ion-text-center">
   <div class="container">
     <div class="page-header">
@@ -9,7 +10,7 @@
     </div>
     <img src="../../assets/welcome.png" />
     <div class="button-container">
-      <ion-button expand="block" class="main-button"  routerDirection="forward">Log in</ion-button>
+      <ion-button expand="block" class="main-button" (click)="login()"  routerDirection="forward">Log in</ion-button>
       <ion-button expand="block" color="dark" fill="clear" routerLink="/signup" routerDirection="forward">Signup</ion-button>
     </div>
   </div>
