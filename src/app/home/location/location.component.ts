@@ -1,21 +1,14 @@
+import { MapsAPILoader } from '@agm/core';
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
-import { MapsAPILoader } from '@agm/core';
-declare var google: {
-  maps: {
-    places: {
-      Autocomplete: any;
-      PlacesService: any; AutocompleteService: new () => any; PlacesServiceStatus: { OK: any; };
-    };
-  };
-};
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-location',
-  templateUrl: './location.page.html',
-  styleUrls: ['./location.page.css'],
+  templateUrl: './location.component.html',
+  styleUrls: ['./location.component.css'],
 })
-export class LocationPage implements OnInit {
+export class LocationComponent  implements OnInit {
   location: string = '';
   placeDescription!: PlaceData;
   places: PlaceData[] = [];
@@ -23,8 +16,10 @@ export class LocationPage implements OnInit {
   placeService: any;
   placeDetailsService: any;
   
-  constructor( private navController: NavController, 
-    private mapsAPILoader: MapsAPILoader
+  constructor( 
+    private navController: NavController, 
+    private mapsAPILoader: MapsAPILoader,
+    private userService: UserService
     ) {
     this.mapsAPILoader.load().then(() => {
       this.placeService = new google.maps.places.AutocompleteService();
@@ -84,6 +79,7 @@ export class LocationPage implements OnInit {
     this.placeDescription = place;
     this.location = place.description;
     this.places = [];
+    this.userService.setUserLocation(place)
   }
 }
 
@@ -92,3 +88,4 @@ interface PlaceData {
   lat: number,
   lng: number,
 }
+

@@ -4,12 +4,14 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { LocationPageRoutingModule } from './location-routing.module';
+import { HomePageRoutingModule } from './home-routing.module';
 
-import { LocationPage } from './location.page';
+import { HomePage } from './home.page';
+import { ShopComponent } from './shop/shop.component';
+import { ShopListComponent } from './shop/shop-list/shop-list.component';
+import { LocationComponent } from './location/location.component';
 import { AgmCoreModule } from '@agm/core';
 import { environment } from 'src/environments/environment';
-import { version } from 'process';
 export const googleAPIKey = environment.googleAPIKey;
 
 @NgModule({
@@ -18,9 +20,13 @@ export const googleAPIKey = environment.googleAPIKey;
     FormsModule,
     AgmCoreModule.forRoot({ apiKey: googleAPIKey, libraries: ["places"] }),
     IonicModule,
-    LocationPageRoutingModule,
-
+    HomePageRoutingModule
   ],
-  declarations: [LocationPage]
+  declarations: [
+    HomePage,
+    ShopComponent,
+    ShopListComponent,
+    LocationComponent
+  ]
 })
-export class LocationPageModule {}
+export class HomePageModule {}
