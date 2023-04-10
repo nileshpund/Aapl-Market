@@ -5,7 +5,7 @@ import { HomePage } from './home.page';
 import { ShopComponent } from './shop/shop.component';
 import { ShopListComponent } from './shop/shop-list/shop-list.component';
 import { LocationComponent } from './location/location.component';
-import { ShopDetailComponent } from './shop/shop-detail/shop-detail.component';
+import { ShopDetailsComponent } from './shop/shop-details/shop-details.component';
 
 const routes: Routes = [
   {
@@ -21,8 +21,8 @@ const routes: Routes = [
         component: ShopListComponent
       },
       {
-        path:"shop-details",
-        component: ShopDetailComponent
+        path:"shop/shop-details",
+        component: ShopDetailsComponent
       },
       {
         path:"location",
