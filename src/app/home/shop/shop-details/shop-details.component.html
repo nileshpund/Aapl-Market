@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <div class="addressContent">
+      <ion-row>
+        <ion-col>
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <!-- <ion-searchbar class="custom" placeholder="Search Your Product"></ion-searchbar> -->
+    <ion-buttons slot="end" large>
+      <ion-icon name="cart-sharp"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end" large>
+      <ion-icon name="notifications-sharp"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+ <ion-card class="main-card">
+  <img alt="Silhouette of mountains" src="https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" /> 
+ </ion-card>
+    <ion-card class="content-sharp"> <ion-card-header>
+      <ion-card-title>Shop Name </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content >
+    <ion-row>
+      <ion-col>Near SBI ATM, Main Road</ion-col>
+      <ion-col class="col-size">
+        <ion-card  class="timestyle" *ngIf="showOpen" [ngClass]="{
+          showopen: showOpen === true}"><b><span class="timetext">Open Now</span> <br><p>9:00 AM to 10:00 PM</p></b></ion-card>
+        <ion-card  class="timestyle"  *ngIf="!showOpen"  [ngClass]="{
+          showclose: showOpen === false}"><b>Closed <br><p>9:00 AM to 10:00 PM</p></b></ion-card>
+      </ion-col>
+   
+    </ion-row>
+    </ion-card-content></ion-card>
+  
+
+    
+  <div class="title ion-padding">
+    <h4>Categories</h4>
+    <p>See all</p>
+  </div>
+
+  <div class="category-slider ion-padding-start">
+    <ion-slides [options]="{ slidesPerView: 'auto', zoom: false, grabCursor: true }">
+      <ion-slide *ngFor="let category of categories">
+        <ion-col>
+          <h5>{{ category.name }}</h5>
+          <img src="{{ category.image }}" />
+        </ion-col>
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+  <ion-slides pager="true" class="product-slider">
+    <ion-slide>
+      <img src="../../assets/home-page-with-fashion-sale-theme_23-2148584361.avif" />
+    </ion-slide>
+    <ion-slide>
+      <img src="../../assets/promotional-sales-poster_1409-1120.avif" />
+    </ion-slide>
+    <ion-slide>
+      <img src="../../assets/promotional-sales-poster_1409-1120.avif" />
+    </ion-slide>
+  </ion-slides>
+</ion-content>
