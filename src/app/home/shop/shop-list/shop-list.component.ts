@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-shop-list',
@@ -16,8 +17,11 @@ export class ShopListComponent  implements OnInit {
     header: 'Distance',
     subHeader: 'Select distance',
   };
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {}
+  showDetails(){
+    this.router.navigate(['home/shop/shop-details'])
 
+  }
 }
