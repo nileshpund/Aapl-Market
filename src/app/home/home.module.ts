@@ -13,6 +13,7 @@ import { LocationComponent } from './location/location.component';
 import { AgmCoreModule } from '@agm/core';
 import { environment } from 'src/environments/environment';
 import { ShopDetailsComponent } from './shop/shop-details/shop-details.component';
+import { ProductDetailComponent } from './shop/product-detail/product-detail.component';
 export const googleAPIKey = environment.googleAPIKey;
 
 @NgModule({
@@ -28,7 +29,8 @@ export const googleAPIKey = environment.googleAPIKey;
     ShopComponent,
     ShopListComponent,
     LocationComponent,
-    ShopDetailsComponent
+    ShopDetailsComponent,
+    ProductDetailComponent
   ]
 })
 export class HomePageModule {}
