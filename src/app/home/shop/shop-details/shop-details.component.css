@@ -73,7 +73,16 @@ ion-icon {
         margin: 0 0 0 16px;
         color: #434343;
     }
-
+    .ion-text-left ion-card{
+      border-radius: 0px;
+      height: 65%;
+    }
+.favorite-items ion-col{
+  margin-top:-21px;
+}
+.favorite-items p{
+  margin-left:6px;
+}
     .title  p,.title1 p {
         margin: 0 16px 0 0;
         color: #656565;
