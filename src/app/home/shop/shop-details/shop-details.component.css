@@ -1,115 +1,150 @@
 ion-icon {
-    font-size: 25px;
-    color: rgb(0, 0, 0);
-  } 
-  ion-card-title{
-    font-size:17px;
-  }
-  ion-row{
-    margin-top:-14px;
-  }
-  .main-card{
-    position:absolute;
-    margin-top: 25px;
-    border-radius: 25px 25px 0px 0px;
-  }
-  .main-card img{
-    border-radius: 25px 25px 0px 0px;
-    width: 100%;
-  }
-  .content-sharp{
-    border-radius: 25px 25px 20px 20px;
-    margin-top:200px;
-  }
-  .timetext{
-    margin-left:11px;
-    border-bottom: 1px solid black;
-  }
-  .image-slide{
-    width: 417px;
-    height: 240px;
-  }
-  .slide
-{
-  /* width:95%; */
-}  .timestyle{
-    width: 109px;
-    height: 55px;
-    margin-top: -29px;
-    font-size: 11px;
-    border-radius: 20px;
-    padding: 12px 8px 1px 15px;
-  }
-  .timestyle p{
-    color: black;
-    font-size: 9px;
-  }
-  .showopen{
-    color:red;
-  }
-  .showclose{
-    color: #1ac31a;
-    
-  }
-  .col-size{
-    flex: 0 0 auto;
-    width: 122px;
-  }
-  .title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 5px;
-    margin-top: -32px;
-  }
-  .title1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 5px;
-    margin-top: -22px;
-  }
-    .title  h2,.title1 h2 {
-        margin: 0 0 0 16px;
-        color: #434343;
-    }
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+}
 
-    .title  p,.title1 p {
-        margin: 0 16px 0 0;
-        color: #656565;
-    }
-  .category-slider  ion-slide {
-        width: 35%;
-        height: 83px;
-        margin-bottom: 30px;
-        margin-left:-10px;
-  }
-  .category-slider  ion-col {
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-  }
-  .slide-category-img:hover{
-    opacity: 1.0;
-  }
-  ion-card {
-    border-radius: 25px;
-    flex-direction: column;
-  }
-  .category-slider   h5 {
-                color: #ffffff;
-                margin-left: -11px;
-            }
+ion-card-title {
+  font-size: 17px;
+}
 
-            .category-slider     img {
-                position: absolute;
-                width: 70%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 25px;
-                top: 0;
-                left: 12px;
-                z-index: -1;
-                box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.16);
-            }
+ion-row {
+  margin-top: -14px;
+}
+
+.main-card {
+  position: absolute;
+  margin-top: 25px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+.main-card img {
+  border-radius: 25px 25px 0px 0px;
+  width: 100%;
+}
+
+.content-sharp {
+  border-radius: 25px 25px 20px 20px;
+  margin-top: 200px;
+}
+
+.timetext {
+  margin-left: 11px;
+  border-bottom: 1px solid black;
+}
+
+.image-slide {
+  width: 417px;
+  height: 240px;
+}
+
+/* .slide {
+  width:95%;
+} */
+
+.timestyle {
+  width: 117px;
+  height: 55px;
+  margin-top: -29px;
+  font-size: 11px;
+  border-radius: 20px;
+  padding: 12px 8px 1px 15px;
+}
+
+.timestyle p {
+  color: black;
+    font-size: 10px;
+    margin-top: -22325px 0px 10px 10px;
+    margin-top: -8px;
+    margin-left: -3px;
+}
+
+.showopen {
+  color: #008000c9;
+}
+
+.showclose {
+  color: red;
+}
+
+.col-size {
+  flex: 0 0 auto;
+  width: 122px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+  margin-top: -32px;
+}
+
+.title1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+  margin-top: -22px;
+}
+
+.title h2,
+.title1 h2 {
+  margin: 0 0 0 16px;
+  color: #434343;
+}
+
+.title p,
+.title1 p {
+  margin: 0 16px 0 0;
+  color: #656565;
+}
+
+.category-slider ion-slide {
+  width: 35%;
+  height: 83px;
+  margin-bottom: 30px;
+  margin-left: -10px;
+}
+
+.category-slider ion-col {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-category-img:hover {
+  opacity: 1.0;
+}
+
+ion-card {
+  border-radius: 25px;
+  flex-direction: column;
+}
+
+.category-slider h5 {
+  color: #ffffff;
+  margin-left: -11px;
+}
+
+.category-slider img {
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  top: 0;
+  left: 12px;
+  z-index: -1;
+  box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.16);
+}
+
+.shop-time {
+  margin: -13px -6px 0px -14px;
+  text-align: center;
+  height: 27px;
+  background: #008000c9;
+  color: white;
+  font-size: 13px;
+  border-radius: 0px 0px 0px 0px;
+}
