@@ -32,10 +32,17 @@
     <ion-row>
       <ion-col>Near SBI ATM, Main Road</ion-col>
       <ion-col class="col-size">
-        <ion-card  class="timestyle" *ngIf="showOpen" [ngClass]="{
+
+        <ion-card class="timestyle">
+          <ion-card class="shop-time"><ion-text>Open Now</ion-text> </ion-card>
+        <b><br><p>9:00 AM to 10:00 PM</p></b>
+        </ion-card>
+
+
+        <!-- <ion-card  class="timestyle" *ngIf="showOpen" [ngClass]="{
           showopen: showOpen === true}"><b><span class="timetext">Open Now</span> <br><p>9:00 AM to 10:00 PM</p></b></ion-card>
         <ion-card  class="timestyle"  *ngIf="!showOpen"  [ngClass]="{
-          showclose: showOpen === false}"><b>Closed <br><p>9:00 AM to 10:00 PM</p></b></ion-card>
+          showclose: showOpen === false}"><b>Closed <br><p>9:00 AM to 10:00 PM</p></b></ion-card> -->
       </ion-col>
    
     </ion-row>
@@ -74,18 +81,16 @@
       
   <div class="title1 ion-padding">
     <h4>Trending</h4>
-    <p>See all</p>
   </div>
 
   <ion-content>
     <h1 class="title">Favorite</h1>
   
-    <ion-row class="favorite-items">
+    <ion-row class="favorite-items" (click)="goToProductDetail()">
       <ion-col size="6" class="ion-text-left">
         <ion-card> <img src="../../assets/depositphotos_4.jpg" /></ion-card>
-       
         <p>$34.00 &nbsp;&nbsp;Women t-shirt</p>
-      
+    
       </ion-col>
       <ion-col size="6" class="ion-text-left">
         <ion-card> <img src="../../assets/depositphotos_4.jpg" /></ion-card>
