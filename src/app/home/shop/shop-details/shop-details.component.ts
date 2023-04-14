@@ -8,11 +8,13 @@ import { DataService } from 'src/app/services/categories/data.service';
 })
 export class ShopDetailsComponent  implements OnInit {
   categories:any= [];
+  trendyCloths:any=[];
  showOpen:boolean=true;
   constructor(  private data: DataService) { }
 
   ngOnInit() {
     this.categories = this.data.getCategories();
+    this.trendyCloths = this.data.getTrendycloths();
   }
 
 }
