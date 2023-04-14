@@ -1,0 +1,120 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <button style="background: white;" ion-button icon-only (click)="back()">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+
+
+    <!-- <ion-input class="search-bar" placeholder="Type something here">
+      <ion-icon class="search-icon" name="search-outline"></ion-icon>
+    </ion-input> -->
+
+    <!-- <ion-searchbar class="custom" placeholder="Search Your Product"></ion-searchbar> -->
+    <ion-buttons slot="end" large>
+      <ion-icon name="cart-sharp"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <ion-row class="img">
+      <ion-col size="12">
+        <ion-slides pager="true" class="product-slider">
+          <ion-slide>
+            <img src="../../assets/tshirt.png"/>
+          </ion-slide>
+          <ion-slide>
+             <img src="../../assets/tshirt.png"/>
+          </ion-slide>
+          <ion-slide>
+             <img src="../../assets/tshirt.png"/>
+          </ion-slide>
+        </ion-slides>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <div class="product">
+    <ion-row>
+      <p class="title">Classic Black Denim Tshirt</p>
+    </ion-row>
+
+    <ion-row class="ratings">
+      <ion-icon class="star" name="star-sharp" small></ion-icon>
+      <ion-icon class="star" name="star-sharp" small></ion-icon>
+      <ion-icon class="star" name="star-sharp" small></ion-icon>
+      <ion-icon class="star" name="star-sharp" small></ion-icon>
+      <span class="ratings-count">440 ratings</span>
+    </ion-row>
+    <p style="margin-top: 7px;">
+      <span class="off-percent">47% off</span>
+      <span class="actual-price">1500</span>
+      <span class="discount-price">{{amount|currency:'INR':'symbol':'3.0'}}</span>
+    </p>
+  </div>
+
+  <div class="color">
+    <ion-row>
+      <p class="p-heading">Colours</p>
+    </ion-row>
+    <ion-row>
+      <a style="background: lightslategray;" class="icon-circle"></a>
+      <a style="background: lightblue;" class="icon-circle"></a>
+      <a style="background: lightgrey;" class="icon-circle"></a>
+      <a style="background: lightpink;" class="icon-circle"></a>
+      <a style="background: lightsalmon;" class="icon-circle"></a>
+    </ion-row>
+  </div>
+
+  <div>
+    <ion-row>
+      <p class="p-heading">Size</p>
+    </ion-row>
+    <ion-row>
+      <ion-col size="2">
+        <ion-card class="size">
+          <ion-card-content class="content-sharp">
+            <ion-text class="size-detail">S</ion-text>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="2">
+        <ion-card class="size">
+          <ion-card-content class="content-sharp">
+            <ion-text class="size-detail">M</ion-text>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="2">
+        <ion-card class="size">
+          <ion-card-content class="content-sharp">
+            <ion-text class="size-detail">L</ion-text>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <!-- <ion-col size="2">
+        <ion-card class="size">
+          <ion-card-content class="content-sharp">
+            <ion-text class="size-detail">XL</ion-text>
+          </ion-card-content>
+        </ion-card>
+      </ion-col> -->
+    </ion-row>
+  </div>
+
+  <div>
+    <ion-row class="description">
+      <p class="p-heading">Description</p>
+    </ion-row>
+    <ion-row>
+      <ion-text class="desc">It should not only describe the t-shirt.
+        Rather, it should tell a compelling story about why the t-shirt is
+        worth buying.
+      </ion-text>
+    </ion-row>
+  </div>
+
+</ion-content>

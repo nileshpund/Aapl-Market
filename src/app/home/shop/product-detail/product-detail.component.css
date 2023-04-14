@@ -1,0 +1,132 @@
+img {
+    margin: 18px 66px 27px 50px;
+    width: 64%;
+}
+
+.icon-circle,
+.icon-circle-xxl {
+    position: relative;
+    display: inline-block;
+    margin: -7px;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 50%;
+    border: 1px solid #ebebeb;
+    background: rgb(0, 161, 225);
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+    margin-left: 17px;
+}
+
+.icon-circle-xxl {
+    position: relative;
+    display: inline-block;
+    margin: -7px;
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+    border-radius: 50%;
+    border: 1px solid #ebebeb;
+    /* background: rgb(0, 161, 225); */
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+    margin-left: 17px;
+}
+
+.p-heading {
+    margin: 18px 10px 15px 10px;
+    font-weight: 600;
+    color: #000000ab;
+}
+
+.color {
+    margin-top: -15px;
+}
+
+/* .img {
+    margin-top: 30px;
+} */
+
+ion-card {
+    width: 100%;
+}
+
+.discount-price {
+    margin: 10px;
+}
+
+.actual-price {
+    text-decoration: line-through
+}
+
+.ratings {
+    margin-top: -10px;
+    margin-bottom: 2px;
+}
+
+.detail {
+    background: #f5f5f569;
+}
+
+.desc {
+    color: #000000b8;
+    margin-left: 10px;
+    margin-top: -10px;
+    font-size: 14px;
+}
+
+.size {
+    border-radius: 10px;
+    margin-top: -10px;
+    /* width: 87%;
+    height: 67%; */
+}
+
+.size-detail {
+    color: #000000b3;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.description {
+    margin-top: -14px
+}
+
+.off-percent {
+    color: green;
+    margin-right: 8px;
+}
+
+.ratings-count {
+    margin-left: 8px;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.search-icon {
+    font-size: 21px;
+    color: #000000a1;
+}
+
+.star {
+    color: rgb(240 115 56);
+    font-size: 20px;
+}
+
+.search-bar {
+    margin-top: 7px;
+    margin-left: 26px;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.product{
+    margin-left:10px;
+    margin-top: -10px
+}
