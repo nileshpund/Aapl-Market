@@ -1,15 +1,14 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <button style="background: white;" ion-button icon-only (click)="back()">
+      <button style="background: white" ion-button icon-only (click)="back()">
         <ion-icon name="chevron-back-outline"></ion-icon>
       </button>
     </ion-buttons>
 
     <div class="addressContent">
       <ion-row>
-        <ion-col>
-        </ion-col>
+        <ion-col> </ion-col>
       </ion-row>
     </div>
 
@@ -23,42 +22,49 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
- <ion-card class="main-card">
-  <img alt="Silhouette of mountains" src="https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" /> 
- </ion-card>
-    <ion-card class="content-sharp"> <ion-card-header>
-      <ion-card-title>Shop Name </ion-card-title>
+  <ion-card class="main-card">
+    <img
+      alt="Silhouette of mountains"
+      src="https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80"
+    />
+  </ion-card>
+  <ion-card class="content-sharp">
+    <ion-card-header>
+      <ion-card-title><b>Shop Name</b> </ion-card-title>
     </ion-card-header>
 
-    <ion-card-content >
-    <ion-row>
-      <ion-col>Near SBI ATM, Main Road</ion-col>
-      <ion-col class="col-size">
+    <ion-card-content>
+      <ion-row>
+        <ion-col class="col-margin">Near SBI ATM, Main Road</ion-col>
+        <ion-col class="col-size">
+          <ion-card class="timestyle">
+            <ion-card class="shop-time"
+              ><ion-text>Open Now</ion-text>
+            </ion-card>
+            <b
+              ><br />
+              <p>9:00 AM to 10:00 PM</p></b
+            >
+          </ion-card>
 
-        <ion-card class="timestyle">
-          <ion-card class="shop-time"><ion-text>Open Now</ion-text> </ion-card>
-        <b><br><p>9:00 AM to 10:00 PM</p></b>
-        </ion-card>
-
-
-        <!-- <ion-card  class="timestyle" *ngIf="showOpen" [ngClass]="{
+          <!-- <ion-card  class="timestyle" *ngIf="showOpen" [ngClass]="{
           showopen: showOpen === true}"><b><span class="timetext">Open Now</span> <br><p>9:00 AM to 10:00 PM</p></b></ion-card>
         <ion-card  class="timestyle"  *ngIf="!showOpen"  [ngClass]="{
           showclose: showOpen === false}"><b>Closed <br><p>9:00 AM to 10:00 PM</p></b></ion-card> -->
-      </ion-col>
-   
-    </ion-row>
-    </ion-card-content></ion-card>
-  
+        </ion-col>
+      </ion-row>
+    </ion-card-content></ion-card
+  >
 
-    
   <div class="title ion-padding">
-    <h4>Categories</h4>
+    <h4><b>Categories</b></h4>
     <p>See all</p>
   </div>
 
   <div class="category-slider ion-padding-start">
-    <ion-slides [options]="{ slidesPerView: 'auto', zoom: false, grabCursor: true }">
+    <ion-slides
+      [options]="{ slidesPerView: 'auto', zoom: false, grabCursor: true }"
+    >
       <ion-slide *ngFor="let category of categories">
         <ion-col (click)="productdetails(category.name)">
           <h5>{{ category.name }}</h5>
@@ -70,59 +76,53 @@
 
   <ion-slides pager="true" class="product-slider">
     <ion-slide class="slide">
-      <img   class="image-slide" src="../../assets/MicrosoftTeams-image.png" />
+      <img class="image-slide" src="../../assets/MicrosoftTeams-image.png" />
     </ion-slide>
     <ion-slide class="slide">
-      <img  class="image-slide" src="../../assets/image1.jpg" />
+      <img class="image-slide" src="../../assets/image1.jpg" />
     </ion-slide>
     <ion-slide class="slide">
-      <img  class="image-slide" src="../../assets/image1.jpg" />
+      <img class="image-slide" src="../../assets/image1.jpg" />
     </ion-slide>
   </ion-slides>
 
-      
   <div class="title1 ion-padding">
-    <h4>Trending</h4>
+    <h4><b>Trending</b></h4>
   </div>
 
   <ion-content>
     <h1 class="title">Favorite</h1>
-  
+
     <ion-row class="favorite-items" (click)="goToProductDetail()">
       <ion-col size="6" class="ion-text-left">
-        <ion-card> <img src="../../assets/depositphotos_4.jpg" /></ion-card>
-        <p>$34.00 &nbsp;&nbsp;Women t-shirt</p>
-    
+        <img src="../../assets/women-blazzer1.jpg" />
+        <p><b>$34.00 &nbsp;&nbsp;Women t-shirt</b></p>
       </ion-col>
       <ion-col size="6" class="ion-text-left">
-        <ion-card> <img src="../../assets/depositphotos_4.jpg" /></ion-card>
-       
-        <p>$24.00 &nbsp;&nbsp;Mens t-shirt</p>
+        <img src="../../assets/tshirt1.png" />
+
+        <p><b>$24.00 &nbsp;&nbsp;Mens t-shirt</b></p>
         <h6></h6>
       </ion-col>
       <ion-col size="6" class="ion-text-left">
-        <ion-card> <img src="../../assets/depositphotos_4.jpg" /></ion-card>
-       
-        <p>$54.00 &nbsp;&nbsp;Women t-shirt</p>
-   
+        <img src="../../assets/Kids-Cartoon-T-Shirt.jpg.jpg" />
+
+        <p><b>$54.00 &nbsp;&nbsp;Women t-shirt</b></p>
       </ion-col>
       <ion-col size="6" class="ion-text-left">
-        <ion-card> <img src="../../assets/depositphotos_4.jpg" /></ion-card>
-       
-        <p>$44.00 &nbsp;&nbsp;Blezer</p>
-       
+        <img src="../../assets/women-blazzer2.jpg" />
+
+        <p><b>$44.00 &nbsp;&nbsp;Blezer</b></p>
       </ion-col>
       <ion-col size="6" class="ion-text-left">
-        <ion-card> <img src="../../assets/depositphotos_4.jpg" /></ion-card>
-       
-        <p>$14.00</p>
-        <h6>T-shirt</h6>
+        <img src="../../assets/tshirt1.png" />
+
+        <p><b>$44.00 &nbsp;&nbsp;Blezer</b></p>
       </ion-col>
       <ion-col size="6" class="ion-text-left">
-        <ion-card> <img src="../../assets/depositphotos_4.jpg" /></ion-card>
-       
-        <p>$30.00 &nbsp;&nbsp;Shirt</p>
-     
+        <img src="../../assets/Kids-Cartoon-T-Shirt.jpg.jpg" />
+
+        <p><b>$44.00 &nbsp;&nbsp;Blezer</b></p>
       </ion-col>
     </ion-row>
   </ion-content>
