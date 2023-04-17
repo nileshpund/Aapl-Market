@@ -1,0 +1,98 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <button style="background: white;" ion-button icon-only (click)="back()">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+
+
+    <!-- <ion-input class="search-bar" placeholder="Type something here">
+      <ion-icon class="search-icon" name="search-outline"></ion-icon>
+    </ion-input> -->
+
+    <!-- <ion-searchbar class="custom" placeholder="Search Your Product"></ion-searchbar> -->
+    <ion-buttons slot="end" large>
+      <ion-icon name="cart-sharp"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <h1 class="title">{{this.res}}'s Collection</h1>
+
+  <ion-row class="favorite-items" >
+    <ion-col size="6" class="ion-text-left">
+      <ion-card> <img src="../../assets/depositphotos_4.jpg" /></ion-card>
+      <p>$34.00 &nbsp;&nbsp;Women t-shirt</p>
+  
+    </ion-col>
+    <ion-col size="6" class="ion-text-left">
+      <ion-card> <img src="../../assets/depositphotos_4.jpg" /></ion-card>
+     
+      <p>$24.00 &nbsp;&nbsp;Mens t-shirt</p>
+      <h6></h6>
+    </ion-col>
+    <ion-col size="6" class="ion-text-left">
+      <ion-card> <img src="../../assets/depositphotos_4.jpg" /></ion-card>
+     
+      <p>$54.00 &nbsp;&nbsp;Women t-shirt</p>
+ 
+    </ion-col>
+    <ion-col size="6" class="ion-text-left">
+      <ion-card> <img src="../../assets/depositphotos_4.jpg" /></ion-card>
+     
+      <p>$44.00 &nbsp;&nbsp;Blezer</p>
+     
+    </ion-col>
+    <ion-col size="6" class="ion-text-left">
+      <ion-card> <img src="../../assets/depositphotos_4.jpg" /></ion-card>
+     
+      <p>$14.00 &nbsp;&nbsp; T-shirt</p>
+    
+    </ion-col>
+    <ion-col size="6" class="ion-text-left">
+      <ion-card> <img src="../../assets/depositphotos_4.jpg" /></ion-card>
+     
+      <p>$30.00 &nbsp;&nbsp;Shirt</p>
+   
+    </ion-col>
+  </ion-row>
+
+  <!-- <ion-row class="favorite-items" *ngIf="res=='Men'">
+    <ion-col size="6" class="ion-text-left">
+      <ion-card> <img src="../../assets/depositphotos_4.jpg" /></ion-card>
+      <p>$34.00 &nbsp;&nbsp;Women t-shirt</p>
+  
+    </ion-col>
+    <ion-col size="6" class="ion-text-left">
+      <ion-card> <img src="../../assets/depositphotos_4.jpg" /></ion-card>
+     
+      <p>$24.00 &nbsp;&nbsp;Mens t-shirt</p>
+      <h6></h6>
+    </ion-col>
+    <ion-col size="6" class="ion-text-left">
+      <ion-card> <img src="../../assets/depositphotos_4.jpg" /></ion-card>
+     
+      <p>$54.00 &nbsp;&nbsp;Women t-shirt</p>
+ 
+    </ion-col>
+    <ion-col size="6" class="ion-text-left">
+      <ion-card> <img src="../../assets/depositphotos_4.jpg" /></ion-card>
+     
+      <p>$44.00 &nbsp;&nbsp;Blezer</p>
+     
+    </ion-col>
+    <ion-col size="6" class="ion-text-left">
+      <ion-card> <img src="../../assets/depositphotos_4.jpg" /></ion-card>
+     
+      <p>$14.00</p>
+      <h6>T-shirt</h6>
+    </ion-col>
+    <ion-col size="6" class="ion-text-left">
+      <ion-card> <img src="../../assets/depositphotos_4.jpg" /></ion-card>
+     
+      <p>$30.00 &nbsp;&nbsp;Shirt</p>
+   
+    </ion-col>
+  </ion-row> -->
+</ion-content>
