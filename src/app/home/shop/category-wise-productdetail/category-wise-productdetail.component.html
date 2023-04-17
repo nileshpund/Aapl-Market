@@ -1,11 +1,10 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <button style="background: white;" ion-button icon-only (click)="back()">
+      <button style="background: white" ion-button icon-only (click)="back()">
         <ion-icon name="chevron-back-outline"></ion-icon>
       </button>
     </ion-buttons>
-
 
     <!-- <ion-input class="search-bar" placeholder="Type something here">
       <ion-icon class="search-icon" name="search-outline"></ion-icon>
@@ -19,124 +18,160 @@
 </ion-header>
 <!-- ----------------------------------womens collection------------------------------------ -->
 <ion-content *ngIf="womenscategory">
-  <h1 class="title">{{this.res}}'s Collection</h1>
-  <ion-row class="favorite-items" >
-    <ion-col size="6" class="ion-text-left">
-      <ion-card> <img src="../../assets/depositphotos_4.jpg" /></ion-card>
-      <p>$34.00 &nbsp;&nbsp;Women t-shirt</p>
+  <div class="full-content">
+    <h1 class="title">{{ this.res }}'s Collection</h1>
+    <ion-row class="favorite-items">
+      <ion-col size="6" class="ion-text-left">
+        <!-- <ion-card> -->
+          <img
+            src="../../assets/women-blazzer1.jpg"
+            (click)="goToProductDetail()"/>
+          <!-- </ion-card> -->
+        <p class="item-name"><b>$30.00 &nbsp;&nbsp;Shirt</b></p>
+      </ion-col>
+      <ion-col size="6" class="ion-text-left">
+        <!-- <ion-card> -->
+          <img
+            src="../../assets/women-blazzer2.jpg"
+            (click)="goToProductDetail()"/>
+          <!-- </ion-card> -->
   
-    </ion-col>
-    <ion-col size="6" class="ion-text-left">
-      <ion-card> <img src="../../assets/depositphotos_4.jpg" /></ion-card>
-     
-      <p>$24.00 &nbsp;&nbsp;Mens t-shirt</p>
-      <h6></h6>
-    </ion-col>
-    <ion-col size="6" class="ion-text-left">
-      <ion-card> <img src="../../assets/depositphotos_4.jpg" /></ion-card>
-     
-      <p>$54.00 &nbsp;&nbsp;Women t-shirt</p>
+        <p class="item-name"><b>$30.00 &nbsp;&nbsp;Shirt</b></p>
+        <h6></h6>
+      </ion-col>
+      <ion-col size="6" class="ion-text-left">
+        <!-- <ion-card> -->
+          <img
+            src="../../assets/women-blezzer.jpg"
+            (click)="goToProductDetail()"/>
+          <!-- </ion-card> -->
+  
+        <p class="item-name"><b>$30.00 &nbsp;&nbsp;Shirt</b></p>
+      </ion-col>
+      <ion-col size="6" class="ion-text-left">
+        <!-- <ion-card> -->
+          <img
+            src="../../assets/women-blazzer2.jpg"
+            (click)="goToProductDetail()"/>
+          <!-- </ion-card> -->
+  
+        <p class="item-name"><b>$30.00 &nbsp;&nbsp;Shirt</b></p>
+      </ion-col>
+      <ion-col size="6" class="ion-text-left">
+        <!-- <ion-card> -->
+          <img
+            src="../../assets/women-blazzer1.jpg"
+            (click)="goToProductDetail()"/>
+          <!-- </ion-card> -->
+  
+        <p class="item-name"><b>$30.00 &nbsp;&nbsp;Shirt</b></p>
+      </ion-col>
+      <ion-col size="6" class="ion-text-left">
+        <!-- <ion-card> -->
+          <img
+            src="../../assets/women-blezzer.jpg"
+            (click)="goToProductDetail()"/>
+          <!-- </ion-card> -->
+  
+        <p class="item-name"><b>$30.00 &nbsp;&nbsp;Shirt</b></p>
+      </ion-col>
+    </ion-row>
+  </div>
  
-    </ion-col>
-    <ion-col size="6" class="ion-text-left">
-      <ion-card> <img src="../../assets/depositphotos_4.jpg" /></ion-card>
-     
-      <p>$44.00 &nbsp;&nbsp;Blezer</p>
-     
-    </ion-col>
-    <ion-col size="6" class="ion-text-left">
-      <ion-card> <img src="../../assets/depositphotos_4.jpg" /></ion-card>
-     
-      <p>$14.00 &nbsp;&nbsp; T-shirt</p>
-    
-    </ion-col>
-    <ion-col size="6" class="ion-text-left">
-      <ion-card> <img src="../../assets/depositphotos_4.jpg" /></ion-card>
-     
-      <p>$30.00 &nbsp;&nbsp;Shirt</p>
-   
-    </ion-col>
-  </ion-row>
 </ion-content>
 <!-- -----------------------------------mens collection---------------------------------------- -->
 <ion-content *ngIf="menscategory">
-  <h1 class="title">{{this.res}}'s Collection</h1>
-  <ion-row class="favorite-items" >
+  <h1 class="title">{{ this.res }}'s Collection</h1>
+  <ion-row class="favorite-items">
     <ion-col size="6" class="ion-text-left">
-      <ion-card> <img src="../../assets/men1.jpg" /></ion-card>
-      <p>$34.00 &nbsp;&nbsp;Women t-shirt</p>
-  
+      <!-- <ion-card> -->
+        <img src="../../assets/tshirt.png" (click)="goToProductDetail()"/>
+      <!-- </ion-card> -->
+      <p class="item-name"><b>$34.00 &nbsp;&nbsp;men t-shirt</b></p>
     </ion-col>
     <ion-col size="6" class="ion-text-left">
-      <ion-card> <img src="../../assets/men-img1.jpeg" /></ion-card>
-     
-      <p>$24.00 &nbsp;&nbsp;Mens t-shirt</p>
+      <!-- <ion-card> -->
+        <img src="../../assets/tshirt2.jpg" (click)="goToProductDetail()"/>
+      <!-- </ion-card> -->
+
+      <p class="item-name"><b>$34.00 &nbsp;&nbsp;men t-shirt</b></p>
       <h6></h6>
     </ion-col>
     <ion-col size="6" class="ion-text-left">
-      <ion-card> <img src="../../assets/depositphoto.jpg" /></ion-card>
-     
-      <p>$54.00 &nbsp;&nbsp;Women t-shirt</p>
- 
+      <!-- <ion-card> -->
+        <img src="../../assets/tshirt2.jpg" (click)="goToProductDetail()"/>
+      <!-- </ion-card> -->
+
+      <p class="item-name"><b>$34.00 &nbsp;&nbsp;men t-shirt</b></p>
     </ion-col>
     <ion-col size="6" class="ion-text-left">
-      <ion-card> <img src="../../assets/men1.jpg" /></ion-card>
-     
-      <p>$44.00 &nbsp;&nbsp;Blezer</p>
-     
+      <!-- <ion-card> -->
+        <img src="../../assets/tshirt.png" (click)="goToProductDetail()"
+      />
+    <!-- </ion-card> -->
+
+      <p class="item-name"><b>$34.00 &nbsp;&nbsp;men t-shirt</b></p>
     </ion-col>
     <ion-col size="6" class="ion-text-left">
-      <ion-card> <img src="../../assets/men-img2.jpeg" /></ion-card>
-     
-      <p>$14.00 &nbsp;&nbsp; T-shirt</p>
-    
+      <!-- <ion-card> -->
+        <img src="../../assets/tshirt.png" (click)="goToProductDetail()"/>
+      <!-- </ion-card> -->
+
+      <p class="item-name"><b>$34.00 &nbsp;&nbsp;men t-shirt</b></p>
     </ion-col>
     <ion-col size="6" class="ion-text-left">
-      <ion-card> <img src="../../assets/men-img2.jpeg" /></ion-card>
-     
-      <p>$30.00 &nbsp;&nbsp;Shirt</p>
-   
+      <!-- <ion-card> -->
+        <img src="../../assets/tshirt2.jpg" (click)="goToProductDetail()"/>
+      <!-- </ion-card> -->
+
+      <p class="item-name"><b>$34.00 &nbsp;&nbsp;men t-shirt</b></p>
     </ion-col>
   </ion-row>
 </ion-content>
 <!-- ---------------------------------------kids collection------------------------------------------------- -->
 <ion-content *ngIf="kids">
-  <h1 class="title">{{this.res}} Collection</h1>
-  <ion-row class="favorite-items" >
+  <h1 class="title">{{ this.res }} Collection</h1>
+  <ion-row class="favorite-items">
     <ion-col size="6" class="ion-text-left">
-      <ion-card> <img src="../../assets/kid1.jpeg" /></ion-card>
-      <p>$34.00 &nbsp;&nbsp;Women t-shirt</p>
-  
+      <!-- <ion-card> -->
+        <img src="../../assets/Kids-Cartoon-T-Shirt.jpg.jpg" (click)="goToProductDetail()"/>
+      <!-- </ion-card> -->
+      <p class="item-name"><b>$34.00 &nbsp;&nbsp;men t-shirt</b></p>
     </ion-col>
     <ion-col size="6" class="ion-text-left">
-      <ion-card> <img src="../../assets/kid3.jpeg" /></ion-card>
-     
-      <p>$24.00 &nbsp;&nbsp;Mens t-shirt</p>
+      <!-- <ion-card> -->
+        <img src="../../assets/Kids-Long-Sleeves-T-Shirt.jpg.jpg" (click)="goToProductDetail()"/>
+      <!-- </ion-card> -->
+
+      <p class="item-name"><b>$34.00 &nbsp;&nbsp;men t-shirt</b></p>
       <h6></h6>
     </ion-col>
     <ion-col size="6" class="ion-text-left">
-      <ion-card> <img src="../../assets/kid1.jpeg" /></ion-card>
-     
-      <p>$54.00 &nbsp;&nbsp;Women t-shirt</p>
- 
+      <!-- <ion-card> -->
+        <img src="../../assets/Kids-Long-Sleeves-T-Shirt.jpg.jpg" (click)="goToProductDetail()"/>
+      <!-- </ion-card> -->
+      <p class="item-name"><b>$34.00 &nbsp;&nbsp;men t-shirt</b></p>
     </ion-col>
     <ion-col size="6" class="ion-text-left">
-      <ion-card> <img src="../../assets/kid3.jpeg" /></ion-card>
-     
-      <p>$44.00 &nbsp;&nbsp;Blezer</p>
-     
+      <!-- <ion-card> -->
+        <img src="../../assets/Kids-Cartoon-T-Shirt.jpg.jpg" (click)="goToProductDetail()"/>
+      <!-- </ion-card> -->
+
+      <p class="item-name"><b>$34.00 &nbsp;&nbsp;men t-shirt</b></p>
     </ion-col>
     <ion-col size="6" class="ion-text-left">
-      <ion-card> <img src="../../assets/kid1.jpeg" /></ion-card>
-     
-      <p>$14.00 &nbsp;&nbsp; T-shirt</p>
-    
+      <!-- <ion-card> -->
+        <img src="../../assets/kid1.png" (click)="goToProductDetail()"/>
+      <!-- </ion-card> -->
+
+      <p class="item-name"><b>$34.00 &nbsp;&nbsp;men t-shirt</b></p>
     </ion-col>
     <ion-col size="6" class="ion-text-left">
-      <ion-card> <img src="../../assets/kid3.jpeg" /></ion-card>
-     
-      <p>$30.00 &nbsp;&nbsp;Shirt</p>
-   
+      <!-- <ion-card> -->
+        <img src="../../assets/kid3.png" (click)="goToProductDetail()"/>
+      <!-- </ion-card> -->
+
+      <p class="item-name"><b>$34.00 &nbsp;&nbsp;men t-shirt</b></p>
     </ion-col>
   </ion-row>
 </ion-content>

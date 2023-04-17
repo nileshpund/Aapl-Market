@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Location } from '@angular/common';
 
 @Component({
@@ -12,7 +12,7 @@ export class CategoryWiseProductdetailComponent  implements OnInit {
   menscategory:boolean=false;
   womenscategory:boolean=false;
   kids:boolean=false;
-  constructor( private actroute: ActivatedRoute, private _location: Location) { }
+  constructor( private actroute: ActivatedRoute, private _location: Location,   private router: Router) { }
 
   ngOnInit() {
     if(this.res=='Mens'){
@@ -24,10 +24,12 @@ export class CategoryWiseProductdetailComponent  implements OnInit {
     }else{
 
     }
-    console.log(this.res)
   }
   
   back(){
     this._location.back();
+  }
+  goToProductDetail(){
+    this.router.navigate(['home/shop/product-details'])
   }
 }

@@ -228,6 +228,9 @@ ion-card {
   border-radius: 25px;
   flex-direction: column;
 }
+.col-margin{
+  margin-left:-3px;
+}
 
 .category-slider h5 {
   color: #ffffff;
@@ -250,6 +253,7 @@ ion-card {
   margin: -13px -6px 0px -14px;
   text-align: center;
   height: 27px;
+  padding-top:3px;
   background: #008000c9;
   color: white;
   font-size: 13px;
