@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
 import { HomePage } from './home.page';
 import { ShopComponent } from './shop/shop.component';
 import { ShopListComponent } from './shop/shop-list/shop-list.component';
 import { LocationComponent } from './location/location.component';
 import { ShopDetailsComponent } from './shop/shop-details/shop-details.component';
 import { ProductDetailComponent } from './shop/product-detail/product-detail.component';
+import { CategoryWiseProductdetailComponent } from './shop/category-wise-productdetail/category-wise-productdetail.component';
 
 const routes: Routes = [
   {
@@ -32,6 +32,10 @@ const routes: Routes = [
       {
         path:"shop/product-details",
         component: ProductDetailComponent
+      },
+      {
+        path:"shop/category-wise",
+        component: CategoryWiseProductdetailComponent
       },
     ]
   }

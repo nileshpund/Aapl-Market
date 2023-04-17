@@ -14,6 +14,7 @@ import { AgmCoreModule } from '@agm/core';
 import { environment } from 'src/environments/environment';
 import { ShopDetailsComponent } from './shop/shop-details/shop-details.component';
 import { ProductDetailComponent } from './shop/product-detail/product-detail.component';
+import { CategoryWiseProductdetailComponent } from './shop/category-wise-productdetail/category-wise-productdetail.component';
 export const googleAPIKey = environment.googleAPIKey;
 
 @NgModule({
@@ -30,7 +31,8 @@ export const googleAPIKey = environment.googleAPIKey;
     ShopListComponent,
     LocationComponent,
     ShopDetailsComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    CategoryWiseProductdetailComponent
   ]
 })
 export class HomePageModule {}
