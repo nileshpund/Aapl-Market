@@ -34,7 +34,7 @@ export class DataService {
     let cat4: ICategory = {
       id: 4,
       name: 'Others',
-      image: '../../assets/light-colored-womens-summer-clothes-shoes-hanger_176873-11430.jpg'
+      image: '../../assets/other.jpg'
     }
 
     categories.push(cat1, cat2, cat3,cat4);
