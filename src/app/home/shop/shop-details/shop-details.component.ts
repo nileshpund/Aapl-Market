@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { DataService } from 'src/app/services/categories/data.service';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-shop-details',
@@ -13,7 +14,8 @@ export class ShopDetailsComponent  implements OnInit {
  showOpen:boolean=true;
   constructor(
     private data: DataService,
-    private router: Router
+    private router: Router,
+    private _location: Location
     ) { }
 
   ngOnInit() {
@@ -23,6 +25,10 @@ export class ShopDetailsComponent  implements OnInit {
 
   goToProductDetail(){
     this.router.navigate(['home/shop/product-details'])
+  }
+
+   back(){
+    this._location.back();
   }
 
 }
