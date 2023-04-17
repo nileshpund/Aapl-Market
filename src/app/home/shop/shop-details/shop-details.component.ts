@@ -11,6 +11,7 @@ export class ShopDetailsComponent  implements OnInit {
   categories:any= [];
   trendyCloths:any=[];
  showOpen:boolean=true;
+ amount: number = 1250;
   constructor(
     private data: DataService,
     private router: Router
@@ -23,6 +24,13 @@ export class ShopDetailsComponent  implements OnInit {
 
   goToProductDetail(){
     this.router.navigate(['home/shop/product-details'])
+  }
+
+  productdetails(parameter:any){
+    let params={
+'name':parameter
+    }
+    this.router.navigate(['home/shop/category-wise',params])
   }
 
 }

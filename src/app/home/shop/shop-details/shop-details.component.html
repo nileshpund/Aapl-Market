@@ -58,7 +58,7 @@
   <div class="category-slider ion-padding-start">
     <ion-slides [options]="{ slidesPerView: 'auto', zoom: false, grabCursor: true }">
       <ion-slide *ngFor="let category of categories">
-        <ion-col>
+        <ion-col (click)="productdetails(category.name)">
           <h5>{{ category.name }}</h5>
           <img src="{{ category.image }}" />
         </ion-col>
