@@ -130,3 +130,6 @@ ion-card {
     margin-left:10px;
     margin-top: -10px
 }
+  ion-segment-button:focus{
+    color: white;
+  }

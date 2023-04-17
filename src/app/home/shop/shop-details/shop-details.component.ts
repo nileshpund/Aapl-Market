@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { DataService } from 'src/app/services/categories/data.service';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-shop-details',
@@ -14,7 +15,8 @@ export class ShopDetailsComponent  implements OnInit {
  amount: number = 1250;
   constructor(
     private data: DataService,
-    private router: Router
+    private router: Router,
+    private _location: Location
     ) { }
 
   ngOnInit() {
@@ -31,6 +33,9 @@ export class ShopDetailsComponent  implements OnInit {
 'name':parameter
     }
     this.router.navigate(['home/shop/category-wise',params])
+  }
+   back(){
+    this._location.back();
   }
 
 }
