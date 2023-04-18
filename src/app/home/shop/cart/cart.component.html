@@ -1,0 +1,96 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <button style="background: white;" ion-button icon-only (click)="back()">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons slot="end" large>
+      <ion-icon name="cart-sharp"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+
+  <ion-item-divider>
+    <ion-row style="margin-bottom: 8px">
+      <ion-col size="10" class="user-dtls">
+        <ion-card-subtitle class="username">Deliver to: <b>John Deo</b></ion-card-subtitle>
+        <ion-card-subtitle class="address">Katraj, Pune, Maharashtra</ion-card-subtitle>
+      </ion-col>
+      <ion-col size="2">
+        <!-- <ion-button  shape="round"></ion-button> -->
+        <ion-button class="address-btn" fill="outline">Change</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-item-divider>
+  <p class="cart-count"><b>3 </b>items in your shopping cart</p>
+  <ion-card class="main-card" *ngFor="let items of demo">
+    <ion-row>
+      <ion-col class="img-card" size="4">
+        <img src="../../assets/tshirt.png" />
+      </ion-col>
+      <ion-col size="8">
+        <ion-card-title class="card-name">{{items.name}}</ion-card-title><br>
+        <ion-card-subtitle class="card-price">{{items.price}}</ion-card-subtitle><br>
+        <ion-card-subtitle class="card-size">Size: {{items.size}}</ion-card-subtitle>
+        <ion-card-subtitle class="card-color">Color: {{items.colour}}<ion-card></ion-card></ion-card-subtitle><br>
+        <div class="qty-selector">
+          <ion-button fill="clear" class="qty-btn">-</ion-button>
+          <ion-label class="qty-btn">{{items.quantity}}</ion-label>
+          <ion-button fill="clear" class="qty-btn">+</ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-row>
+    <ion-col size="12">
+      <ion-card-subtitle class="p-header">Price details</ion-card-subtitle>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="sub-headers">
+    <ion-col size="10">
+      <ion-card-subtitle>Subtotal</ion-card-subtitle>
+    </ion-col>
+    <ion-col size="2">$1500</ion-col>
+  </ion-row>
+
+  <ion-row class="sub-headers">
+    <ion-col size="10">
+      <ion-card-subtitle>Discount</ion-card-subtitle>
+    </ion-col>
+    <ion-col size="2">$1500</ion-col>
+  </ion-row>
+
+  <ion-row class="sub-headers">
+    <ion-col size="10">
+      <ion-card-subtitle>Delivery charges</ion-card-subtitle>
+    </ion-col>
+    <ion-col size="2">$1500</ion-col>
+  </ion-row>
+  <hr>
+  <ion-row class="cart-total">
+    <ion-col size="10">
+      <ion-card-subtitle class="t-header">Total</ion-card-subtitle>
+    </ion-col>
+    <ion-col size="2">$1500</ion-col>
+  </ion-row>
+  <hr>
+  <ion-card-subtitle style="color: rgba(0, 128, 0, 0.701); margin: 0px 0px 12px 12px;">You will save $250 on this
+    order</ion-card-subtitle>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col size="3" class="cart-price">
+        <span style="margin-left: 10px;">$1500</span>
+      </ion-col>
+      <ion-col size="9">
+        <ion-button class="order-btn" shape="round" color="warning">Place order</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>
