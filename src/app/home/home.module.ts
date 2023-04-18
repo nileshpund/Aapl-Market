@@ -15,6 +15,7 @@ import { environment } from 'src/environments/environment';
 import { ShopDetailsComponent } from './shop/shop-details/shop-details.component';
 import { ProductDetailComponent } from './shop/product-detail/product-detail.component';
 import { CategoryWiseProductdetailComponent } from './shop/category-wise-productdetail/category-wise-productdetail.component';
+import { CartComponent } from './shop/cart/cart.component';
 export const googleAPIKey = environment.googleAPIKey;
 
 @NgModule({
@@ -32,7 +33,8 @@ export const googleAPIKey = environment.googleAPIKey;
     LocationComponent,
     ShopDetailsComponent,
     ProductDetailComponent,
-    CategoryWiseProductdetailComponent
+    CategoryWiseProductdetailComponent,
+    CartComponent
   ]
 })
 export class HomePageModule {}
