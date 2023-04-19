@@ -10,6 +10,7 @@ import { CategoryWiseProductdetailComponent } from './shop/category-wise-product
 import { UserProfileComponent } from './user/user-profile/user-profile.component';
 import { UserComponent } from './user/user.component';
 import { CartComponent } from './shop/cart/cart.component';
+import { BuyNowComponent } from './shop/buy-now/buy-now.component';
 
 
 const routes: Routes = [
@@ -48,13 +49,17 @@ const routes: Routes = [
         
       },
       {
-        path:"user/userprofile",
+        path:"profile",
         component: UserProfileComponent
       },
       {
         path:"cart",
         component: CartComponent
       },
+      {
+        path:"buy-now",
+        component:BuyNowComponent
+      }
     ]
   }
 ];

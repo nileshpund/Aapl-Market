@@ -22,5 +22,9 @@ export class ProductDetailComponent  implements OnInit {
 
   goToCart(){
     this.router.navigate(['home/cart']) 
+  } 
+
+  buyNow(){
+    this.router.navigate(['home/buy-now'])
   }
 }

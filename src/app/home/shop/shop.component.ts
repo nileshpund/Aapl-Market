@@ -40,4 +40,8 @@ export class ShopComponent implements OnInit {
     })
   }
 
+  goToProfile(){
+    this.router.navigate(["home/profile"])
+  }
+
 }

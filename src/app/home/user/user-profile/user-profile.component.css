@@ -1,10 +1,11 @@
 .profile {
   height: 100%;
   width: 100%;
-  background: linear-gradient(92deg, rgb(244 194 45), rgb(245 104 56));
+  background: linear-gradient(to top, #9e9e9ea3 0%, white 100%);
 }
+
 .circle img {
-  background-color: white;
+  /* background-color: white; */
   border-radius: 50%;
   /* border: 1px solid grey; */
   position: relative;
@@ -15,11 +16,13 @@
   /* margin-left: 98px; */
   margin-top: 29px;
 }
+
 .edit {
-    position: absolute;
-    margin-top: 110px;
-    margin-left: -54px;
+  position: absolute;
+  margin-top: 110px;
+  margin-left: -54px;
 }
+
 ion-card {
   border-radius: 25px;
   flex-direction: column;
@@ -34,25 +37,35 @@ ion-card {
 }
 
 ion-col h6 {
-  margin-top: -1px;
-  margin-left: 7px;
-  color: #ebe6e6;
+  margin-top: -8px;
+  margin-left: 9px;
+  color: #00000099;
 }
+
 ion-col h5 {
-  margin-top: -1px;
-  color:white;
+  margin-top: 5px;
+  color: rgba(0, 0, 0, 0.783);
+  font-weight: 700;
   margin-left: 32px;
 }
+
 ion-item h3 {
-    font-size: 17px;
-    padding-bottom: 12px;
+  font-size: 17px;
+  padding-bottom: 12px;
 }
+
 .content-sharp {
   border-radius: 44px 44px 0px 0px;
-  margin-top: 9px;
-  width: 100%;
-  margin-left: 0px;
+  width: auto;
+  height: inherit;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 ion-item {
   height: 76px;
+}
+
+ion-card-content {
+  height: 60px;
 }

@@ -9,6 +9,35 @@ export class UserProfileComponent  implements OnInit {
 
   constructor( private _location: Location) { }
 
+icon : string = 'clipboard-sharp';
+  profileSettings:any[]=[
+    {
+      displayName: 'My Orders',
+      name:'myOrders',
+      icon:'clipboard-sharp'
+    },
+    {
+      displayName: 'Payment',
+      name:'payment',
+      icon:'card'
+    },
+    {
+      displayName: 'Favourites',
+      name:'favourites',
+      icon:'heart'
+    },
+    {
+      displayName: 'Change Password',
+      name:'changePassword',
+      icon:'lock-closed'
+    },
+    {
+      displayName:'Edit Profile',
+      name:'editProfile',
+      icon:'create-sharp'
+    }
+  ]
+
   ngOnInit() {}
 
   back(){
