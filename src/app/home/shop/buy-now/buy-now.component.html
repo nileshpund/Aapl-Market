@@ -1,3 +1,113 @@
-<p>
-  buy-now works!
-</p>
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <button style="background: white;" ion-button icon-only (click)="back()">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-buttons slot="end" large>
+      <ion-icon name="cart-sharp"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end" large>
+      <ion-icon name="notifications-sharp"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h3 class="headings">Order Details</h3>
+
+  <ion-card class="main-card" *ngFor="let items of demo">
+    <ion-row>
+      <ion-col class="img-card" size="3">
+        <img src="../../assets/tshirt.png" />
+      </ion-col>
+      <ion-col size="9">
+        <ion-card-title class="card-name">{{items.name}}</ion-card-title><br>
+        <ion-card-subtitle class="card-price">{{items.price |currency:'INR':'symbol-narrow':'4.2-2'}}</ion-card-subtitle><br>
+        <ion-card-subtitle class="card-size">Size: {{items.size}} </ion-card-subtitle>
+        <ion-card-subtitle class="card-color">Color: {{items.colour}}<ion-card></ion-card></ion-card-subtitle><br>
+        <div class="qty-selector">
+          <button class="qty-btn">-</button>
+          <ion-label class="qty-count">{{items.quantity}}</ion-label>
+          <button class="qty-btn">+</button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+
+  <!-- Location -->
+  <h3 class="headings">Deliver Location</h3>
+  <ion-row>
+    <ion-col size="2">
+      <ion-icon class="location-icon" name="location-sharp"></ion-icon>
+    </ion-col>
+    <ion-col size="8">
+      <h1 class="main-address">Pune, Maharashtra</h1>
+      <h1 class="sub-address">41002, India</h1>
+    </ion-col>
+    <ion-col size="2">
+      <ion-icon class="frwd-arrow" name="chevron-forward-sharp"></ion-icon>
+    </ion-col>
+  </ion-row>
+
+  <!-- //payment -->
+  <h3 class="headings">Payment Method</h3>
+  <ion-row>
+    <ion-col size="2">
+      <ion-icon class="payment-icon" name="tv-outline"></ion-icon>
+    </ion-col>
+    <ion-col size="8">
+      <h1 class="main-address">Pune, Maharashtra</h1>
+      <h1 class="sub-address">41002, India</h1>
+    </ion-col>
+    <ion-col size="2">
+      <ion-icon class="frwd-arrow" name="chevron-forward-sharp"></ion-icon>
+    </ion-col>
+  </ion-row>
+
+  <!-- Order -->
+  <h3 class="order-heading">Order Details</h3>
+  
+  <ion-row class="sub-headers">
+    <ion-col size="10">
+      <h1 class="orderDtl-heders">Subtotal</h1>
+    </ion-col>
+    <ion-col size="2">$1500</ion-col>
+  </ion-row>
+
+  <ion-row class="sub-headers">
+    <ion-col size="10">
+      <h1 class="orderDtl-heders">Discount</h1>
+    </ion-col>
+    <ion-col size="2">$1500</ion-col>
+  </ion-row>
+
+  <ion-row class="sub-headers">
+    <ion-col size="10">
+      <h1 class="orderDtl-heders">Delivery charges</h1>
+    </ion-col>
+    <ion-col size="2">$1500</ion-col>
+  </ion-row>
+  <hr>
+  <ion-row class="cart-total">
+    <ion-col size="10">
+      <h1 class="t-header">Total</h1>
+      <!-- <ion-card-subtitle class="t-header">Total</ion-card-subtitle> -->
+    </ion-col>
+    <ion-col size="2">$1500</ion-col>
+  </ion-row>
+  <hr>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col size="12">
+        <ion-button class="order-btn" shape="round" color="warning">Place order</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>
