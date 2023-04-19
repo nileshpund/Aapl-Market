@@ -1,0 +1,120 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <button style="background: white" ion-button icon-only (click)="back()">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <div class="addressContent">
+      <ion-row>
+        <ion-col></ion-col>
+        <ion-col><h4>Profile</h4> </ion-col>
+        <ion-col></ion-col>
+      </ion-row>
+    </div>
+
+    <!-- <ion-searchbar class="custom" placeholder="Search Your Product"></ion-searchbar> -->
+   
+    <ion-buttons slot="end" large>
+      <ion-icon name="notifications-sharp"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+<div class="profile ">
+  <ion-row>
+    <ion-col></ion-col>
+    <ion-col>  <span class="circle">
+      <img src="https://c1.staticflickr.com/5/4023/5154094149_8c1345f634.jpg">
+      <ion-icon class="edit" name="create-outline"></ion-icon>
+      <h5>Johny Deo</h5>
+      <h6>Pune,Maharashtra</h6>
+    </span></ion-col>
+    <ion-col></ion-col>
+  </ion-row>
+  <ion-card class="content-sharp">
+    <ion-card-content>
+      <ion-item >
+        <ion-icon name="clipboard-sharp" slot="start"></ion-icon>
+        <ion-label>
+          <h3>My Orders</h3>
+         
+        </ion-label>
+        <ion-icon name="chevron-forward-sharp"></ion-icon>
+      </ion-item>
+      
+      <ion-item >
+        <ion-icon name="card" slot="start"></ion-icon>
+        <ion-label>
+          <h3>Payment</h3>
+         
+        </ion-label>
+        <ion-icon name="chevron-forward-sharp"></ion-icon>
+      </ion-item>
+      
+      <ion-item  >
+        <ion-icon name="heart" slot="start"></ion-icon>
+        <ion-label>
+          <h3>Favourites</h3>
+        
+        </ion-label>
+        <ion-icon name="chevron-forward-sharp"></ion-icon>
+      </ion-item>
+      
+      <ion-item  >
+        <ion-icon name="lock-closed" slot="start"></ion-icon>
+        <ion-label>
+          <h3>Change Password</h3>
+          
+        </ion-label>
+        <ion-icon name="chevron-forward-sharp"></ion-icon>
+      </ion-item>
+      
+      <ion-item  >
+        <ion-icon name="create-sharp" slot="start"></ion-icon>
+        <ion-label>
+          <h3>Edit Profile</h3>
+         
+        </ion-label>
+        <ion-icon name="chevron-forward-sharp"></ion-icon>
+      </ion-item>
+    </ion-card-content>
+    </ion-card>
+</div>
+
+    <!-- <img
+      alt="Silhouette of mountains"
+      src="https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80"
+    /> -->
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>  
+      <ion-tab-bar slot="top" color="light">  
+        <ion-tab-button >  
+          <ion-icon class="icon-focus" name="home-outline"></ion-icon>
+        </ion-tab-button>  
+          
+        <ion-tab-button >  
+          <ion-icon name="search-outline"></ion-icon>
+        </ion-tab-button>  
+
+        <ion-tab-button >  
+          <ion-icon name="apps-outline"></ion-icon> 
+        </ion-tab-button> 
+
+        <ion-tab-button >  
+          <ion-icon  name="cart-outline"></ion-icon>
+        </ion-tab-button> 
+        
+        <ion-tab-button >  
+          <ion-icon  name="person-outline"></ion-icon>
+        </ion-tab-button> 
+        
+      </ion-tab-bar>  
+    </ion-tabs>  
+  </ion-toolbar>
+</ion-footer>
