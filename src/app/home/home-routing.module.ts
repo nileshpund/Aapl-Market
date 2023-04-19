@@ -9,6 +9,8 @@ import { ProductDetailComponent } from './shop/product-detail/product-detail.com
 import { CategoryWiseProductdetailComponent } from './shop/category-wise-productdetail/category-wise-productdetail.component';
 import { UserProfileComponent } from './user/user-profile/user-profile.component';
 import { UserComponent } from './user/user.component';
+import { CartComponent } from './shop/cart/cart.component';
+
 
 const routes: Routes = [
   {
@@ -48,7 +50,11 @@ const routes: Routes = [
       {
         path:"user/userprofile",
         component: UserProfileComponent
-      }
+      },
+      {
+        path:"cart",
+        component: CartComponent
+      },
     ]
   }
 ];
