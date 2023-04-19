@@ -7,6 +7,8 @@ import { LocationComponent } from './location/location.component';
 import { ShopDetailsComponent } from './shop/shop-details/shop-details.component';
 import { ProductDetailComponent } from './shop/product-detail/product-detail.component';
 import { CategoryWiseProductdetailComponent } from './shop/category-wise-productdetail/category-wise-productdetail.component';
+import { UserProfileComponent } from './user/user-profile/user-profile.component';
+import { UserComponent } from './user/user.component';
 
 const routes: Routes = [
   {
@@ -37,6 +39,16 @@ const routes: Routes = [
         path:"shop/category-wise",
         component: CategoryWiseProductdetailComponent
       },
+      {
+        
+          path:"user",
+          component: UserComponent
+        
+      },
+      {
+        path:"user/userprofile",
+        component: UserProfileComponent
+      }
     ]
   }
 ];
