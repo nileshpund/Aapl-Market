@@ -1,0 +1,186 @@
+.address-btn {
+    margin: 13px 0px 0px 5px;
+    font-size: 12px;
+    --border-color: #0000002b;
+    color: #00000096;
+}
+
+.user-dtls {
+    color: #000000a8;
+    font-size: 14px;
+}
+
+.cart-count {
+    background: #607d8b42;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+    margin: 8px 50px 0px 50px;
+}
+
+.img {
+    width: 90px;
+    margin-top: 17px;
+    margin: 13px;
+    /* background: aliceblue; */
+}
+
+img {
+    max-width: 70%;
+    margin: 6px 0px 0px 12px;
+}
+
+.img-card {
+    background: aliceblue;
+}
+
+.img-dtl {
+    margin: 10px;
+    background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+
+.card {
+    background: aliceblue;
+    border-radius: 44px;
+    margin: 10px;
+    height: 200px;
+    width: max-content;
+}
+
+.qty-selector {
+    margin:-33px 0px 0px -5px;
+}
+
+.card-name {
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.card-price {
+    margin-top: -13px;
+}
+
+.card-size {
+    margin-top: -13px;
+}
+
+.card-color {
+    margin-top: 4px;
+}
+
+.main-card {
+    height: 115px;
+}
+
+.qty-btn {
+    margin: -3px 0px 0px 2px;
+    border-radius: 12px;
+    font-size: 16px;
+    width: 33px;
+    font-weight: bold;
+}
+
+.qty-btn:hover {
+    background: #e972095b;
+}
+
+.qty-count {
+    font-size: 16px;
+    margin: 10px;
+}
+
+.address {
+    margin: 5px 0px 0px 0px;
+}
+
+.username {
+    color: #000000e6;
+    margin: 5px 0px 0px 0px;
+}
+
+hr {
+    border: none;
+    border-top: 1px dotted rgb(49, 48, 48);
+    color: #fff;
+    background-color: #fff;
+    height: 1px;
+    width: 100%;
+}
+
+.p-header {
+    color: #000000c9;
+    font-weight: 700;
+    font-size: 17px;
+    margin: 10px;
+}
+
+.sub-headers {
+    font-size: 15px;
+    margin: -13px 0px 10px 10px;
+    color: #000000a6;
+}
+
+.cart-total,
+.t-header {
+    margin: -2px 0px -5px 4px;
+    font-size: 17px;
+    color: black;
+    font-weight: 700;
+}
+
+.order-btn {
+    margin: 0px;
+    font-size: 12px;
+    font-weight: 600;
+    width: 100%;
+}
+
+.cart-price {
+    margin: 15px 0px 0px 0px;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.headings {
+    margin: 15px 0px 2px 10px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.main-address {
+    margin: 9px 0px -12px -23px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sub-address {
+    font-size: 13px;
+    margin: 15px 0px 12px -22px;
+}
+
+.location-icon,
+.payment-icon {
+    font-size: 28px;
+    margin: 11px 0px 0px 3px;
+}
+
+.frwd-arrow {
+    font-size: 21px;
+    margin: 15px 0px 0px 10px;
+}
+
+.order-heading {
+    margin: 15px 0px 20px 10px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.orderDtl-heders {
+    font-size: 14px;
+    margin: 0px 0px 0px 0px;
+}
+
+ion-card-subtitle{
+    color: #000000e8
+}
