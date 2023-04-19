@@ -270,11 +270,11 @@ ion-icon {
     align-items: center;
   }
   .content-sharp {
-    font-size: 12px;
+    /* font-size: 12px; */
   }
   .content-sharp ion-icon {
-    color: #008000c4;
-    font-size: 13px;
+    color: black;
+    /* font-size: 13px; */
   }
   
   ion-card {
