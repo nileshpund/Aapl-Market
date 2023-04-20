@@ -26,8 +26,8 @@
 }
 
 img {
-    max-width: 70%;
-    margin: 6px 0px 0px 12px;
+    max-width: 81%;
+    margin: 11px 0px 0px 6px;
 }
 
 .img-card {
@@ -157,6 +157,7 @@ hr {
 .sub-address {
     font-size: 13px;
     margin: 15px 0px 12px -22px;
+    color: #00000085;
 }
 
 .location-icon,
@@ -179,8 +180,4 @@ hr {
 .orderDtl-heders {
     font-size: 14px;
     margin: 0px 0px 0px 0px;
-}
-
-ion-card-subtitle{
-    color: #000000e8
 }

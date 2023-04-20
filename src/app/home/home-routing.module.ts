@@ -11,6 +11,7 @@ import { UserProfileComponent } from './user/user-profile/user-profile.component
 import { UserComponent } from './user/user.component';
 import { CartComponent } from './shop/cart/cart.component';
 import { BuyNowComponent } from './shop/buy-now/buy-now.component';
+import { OrderPlacedComponent } from './shop/order-placed/order-placed.component';
 
 
 const routes: Routes = [
@@ -59,6 +60,10 @@ const routes: Routes = [
       {
         path:"buy-now",
         component:BuyNowComponent
+      },
+      {
+        path:"order-placed",
+        component:OrderPlacedComponent
       }
     ]
   }
