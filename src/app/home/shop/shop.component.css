@@ -1,6 +1,6 @@
 ion-icon {
     font-size: 25px;
-    color: rgb(0, 0, 0);
+    /* color: rgb(0, 0, 0); */
   }
   
   ion-buttons {
@@ -64,3 +64,10 @@ ion-icon {
     margin-bottom: -8px;
   }
   
+  .current-location{
+    color: oldlace;
+  }
+
+  ion-footer{
+    --ion-background-color:white
+}

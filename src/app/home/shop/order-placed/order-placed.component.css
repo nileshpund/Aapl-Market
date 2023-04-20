@@ -1,0 +1,123 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;800&display=swap'); */
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: montserrat, sans-serif;
+}
+
+#confetti-holder {
+    position: fixed;
+    height: 100vh;
+    pointer-events: none;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#e0DQ82qcIov1 {
+    height: 90vh;
+    min-width: 100px;
+    min-height: 200px;
+
+}
+
+.center {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #FFF8F5;
+    align-items: center;
+    justify-content: center;
+}
+
+#shooter {
+    font-weight: 500;
+    padding: 16px 32px;
+    min-width: 200px;
+    overflow: hidden;
+    cursor: pointer;
+    outline: none;
+    color: rgba(250, 250, 255, 0.9);
+    background-color: #E64784;
+    border: none;
+    border-radius: 48px;
+    box-shadow: 0 4px 8px #F2B3C8;
+    -webkit-tap-highlight-color: transparent;
+    transition: box-shadow 0.1s ease-out;
+}
+
+#shooter:hover {
+    background-color: #F74D8D;
+    color: rgba(250, 250, 255, 1);
+    box-shadow: 0 8px 16px #F6CEDA;
+}
+
+#shooter:active {
+    box-shadow: 0 0 8px #F6CEDA;
+    transform: translateY(4px);
+    color: #fff;
+}
+
+span.shoot {
+    font-size: 28px;
+    text-align: center;
+    pointer-events: none;
+}
+
+#love {
+    position: fixed;
+    color: rgba(10, 0, 15, 0.48);
+    bottom: 1rem;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 1.2vw;
+}
+
+#svgator {
+    color: rgba(100, 90, 210, 0.8);
+}
+
+#svgator:hover {
+    color: rgba(100, 90, 230, 1);
+}
+
+a:visited {
+    color: rgba(100, 90, 210, 1);
+}
+
+.checkmark {
+    font-size: 100px;
+    margin-top: 150px;
+    background: #e97109;
+    border-radius: 14px;
+    color: oldlace;
+    margin-left: 12px
+}
+
+h2,
+h3,
+p {
+    text-align: center;
+    margin-top: 0px;
+}
+
+h2 {
+    margin-top: 15px;
+    color:#000000ab
+}
+
+h3 {
+    font-weight: bold;
+    margin-top: -5px;
+    color: #000000cc;
+}
+
+p{
+    color: #00000075;
+}
+
+ion-icon{
+    color: oldlace;
+}

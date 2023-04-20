@@ -290,4 +290,13 @@ ion-icon {
     margin-bottom: -8px;
   }
   
+  ion-header{
+    --ion-background-color:#e97109;
+}
   /* HEADER CSS END */
+  ion-content{
+    --ion-background-color:#f5f5f5de;
+}
+ion-menu-button, .h-icon{
+  color: oldlace;
+}

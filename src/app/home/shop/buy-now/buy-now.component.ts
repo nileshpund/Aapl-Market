@@ -29,4 +29,8 @@ export class BuyNowComponent  implements OnInit {
   back(){
     this._location.back();
   }
+
+  orderPlaced(){
+    this.router.navigate(['/home/order-placed'])
+  }
 }
