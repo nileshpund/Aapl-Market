@@ -90,9 +90,9 @@ a:visited {
 .checkmark {
     font-size: 100px;
     margin-top: 150px;
-    background: #e97109;
+    background: #e97109d6;
     border-radius: 14px;
-    color: oldlace;
+    color: #ffffff;
     margin-left: 12px
 }
 
@@ -119,5 +119,9 @@ p{
 }
 
 ion-icon{
-    color: oldlace;
+    color: #ffffff;
+}
+
+.shop-more-btn{
+    --background:#e97109d6;
 }

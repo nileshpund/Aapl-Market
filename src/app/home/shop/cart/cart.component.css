@@ -1,8 +1,9 @@
 .address-btn {
     margin: 13px 0px 0px 5px;
     font-size: 12px;
-    --border-color: #0000002b;
-    color: #00000096;
+    --border-color: #00000045;
+    color: #000000c9;
+    background: white;
 }
 
 .user-dtls {
@@ -27,7 +28,7 @@
 
 img {
     max-width: 81%;
-    margin: 11px 0px 0px 6px;
+    /* margin: 11px 0px 0px 6px; */
 }
 
 .img-card {
