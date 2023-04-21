@@ -64,9 +64,9 @@ ion-icon {
     margin-bottom: -8px;
   }
   
-  .current-location{
+  /* .current-location{
     color: #ffffff;
-  }
+  } */
 
   ion-footer{
     --ion-background-color:white
