@@ -90,7 +90,7 @@ a:visited {
 .checkmark {
     font-size: 100px;
     margin-top: 150px;
-    background: #e97109d6;
+    background: #e97109;
     border-radius: 14px;
     color: #ffffff;
     margin-left: 12px
@@ -123,5 +123,5 @@ p{
 } */
 
 .shop-more-btn{
-    --background:#e97109d6;
+    --background:#e97109;
 }
