@@ -7,7 +7,7 @@
 
 .page-header h1 {
     margin-top: 0;
-    color: #e97109
+    color: #e97109d6
 }
 
 .page-header h4{
@@ -29,7 +29,7 @@ ion-header p {
     /* --background: linear-gradient(45deg,
             rgb(255, 193, 7),
             rgb(248, 87, 31)); */
-    --background: #e97109;
+    --background: #e97109d6;
     box-shadow: 0px 20px 20px -17px rgb(248, 87, 31);
     position: relative;
     height: 50px;
@@ -37,6 +37,6 @@ ion-header p {
 }
 
 #skip {
-    color: #e97109;
+    color: #e97109d6;
     margin-right: 10px;
 }

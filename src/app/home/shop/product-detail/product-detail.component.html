@@ -55,7 +55,7 @@
 
   <div class="color">
     <ion-row>
-      <p class="p-heading">Colours</p>
+      <h3 class="headings">Colors</h3>
     </ion-row>
     <ion-row>
       <a style="background: lightslategray;" class="icon-circle"></a>
@@ -68,43 +68,50 @@
 
   <div>
     <ion-row>
-      <p class="p-heading">Size</p>
+      <h3 class="headings">Colors</h3>
     </ion-row>
     <ion-row>
       <ion-col size="2">
         <ion-card class="size">
-          <ion-card-content class="content-sharp">
-            <ion-text class="size-detail">S</ion-text>
+          <ion-card-content class="content-sharp">S
+            <!-- <ion-text class="size-detail">S</ion-text> -->
           </ion-card-content>
         </ion-card>
       </ion-col>
       <ion-col size="2">
         <ion-card class="size">
-          <ion-card-content class="content-sharp">
-            <ion-text class="size-detail">M</ion-text>
+          <ion-card-content class="content-sharp">M
+            <!-- <ion-text class="size-detail">M</ion-text> -->
           </ion-card-content>
         </ion-card>
       </ion-col>
       <ion-col size="2">
         <ion-card class="size">
-          <ion-card-content class="content-sharp">
-            <ion-text class="size-detail">L</ion-text>
+          <ion-card-content class="content-sharp">L
+            <!-- <ion-text class="size-detail">L</ion-text> -->
           </ion-card-content>
         </ion-card>
       </ion-col>
-      <!-- <ion-col size="2">
+      <ion-col size="2">
         <ion-card class="size">
-          <ion-card-content class="content-sharp">
-            <ion-text class="size-detail">XL</ion-text>
+          <ion-card-content class="content-sharp">XL
+            <!-- <ion-text class="size-detail">XL</ion-text> -->
           </ion-card-content>
         </ion-card>
-      </ion-col> -->
+      </ion-col>
+      <ion-col size="2">
+        <ion-card class="size">
+          <ion-card-content class="content-sharp">XXL
+            <!-- <ion-text class="size-detail">XL</ion-text> -->
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
     </ion-row>
   </div>
 
   <div>
     <ion-row class="description">
-      <p class="p-heading">Description</p>
+      <h3 class="headings">Description</h3>
     </ion-row>
     <ion-row>
       <ion-text class="desc">It should not only describe the t-shirt.
@@ -119,10 +126,10 @@
 <ion-footer>
   <ion-toolbar>
     <ion-segment color="white">
-      <ion-segment-button (click)="goToCart()">
+      <ion-segment-button style="color: #000000de;" (click)="goToCart()">
         Add To Cart
       </ion-segment-button>
-      <ion-segment-button (click)="buyNow()" style="background: linear-gradient(45deg,rgb(255, 193, 7), rgb(248, 87, 31)); color: beige;">
+      <ion-segment-button (click)="buyNow()" style="background: #e97109d6; color: beige;">
         Buy Now
       </ion-segment-button>
     </ion-segment>
