@@ -1,11 +1,17 @@
 .title{
     text-align: center;
+    font-weight: bold;
 
 }
  .item-name{
-    margin-left:27px;
+    text-align: center;
 }
 /* .full-content{
     background-color: #eef5f9;
     margin-top: -17px;
 } */
+
+ion-card{
+    background: whitesmoke;
+    color: black;
+}

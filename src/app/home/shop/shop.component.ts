@@ -41,7 +41,10 @@ export class ShopComponent implements OnInit {
   }
 
   goToProfile(){
-    this.router.navigate(["home/profile"])
+    this.router.navigate(["home/profile"]);
   }
 
+  goToCart(){
+    this.router.navigate(["home/cart"]);
+  }
 }

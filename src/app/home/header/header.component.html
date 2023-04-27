@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button *ngIf="routeURL == '/home/shop'"></ion-menu-button>
+      <ion-icon *ngIf="routeURL != '/home/shop'" class="h-icon" name="chevron-back-outline" (click)="back()"></ion-icon>
+    </ion-buttons>
+
+    <div class="addressContent" *ngIf="routeURL == '/home/shop'">
+      <ion-row>
+        <ion-col>
+          <ion-label class="yloc current-location h-icon" routerLink="../location">{{userLocation.description || 'Loading location...'}}
+          </ion-label>
+          <ion-icon  class="chevron-down h-icon" name="chevron-down-outline"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <!-- <ion-searchbar class="custom" placeholder="Search Your Product"></ion-searchbar> -->
+    <ion-buttons slot="end" large (click)="goToCart()">
+      <ion-icon class="h-icon" name="cart-sharp"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end" large (click)="goToNotification()">
+      <ion-icon class="h-icon" name="notifications-sharp"></ion-icon>
+      <!-- <ion-badge color="danger">100</ion-badge> -->
+      <ion-badge *ngIf="notificationCount > 0" color="danger" (click)="goToNotification()"
+        [ngClass]="{'active': notificationCount > 99}">
+        <span>{{notificationCount > 99 ? '99+':notificationCount}}</span>
+      </ion-badge>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>

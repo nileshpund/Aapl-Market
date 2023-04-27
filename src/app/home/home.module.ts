@@ -19,6 +19,8 @@ import { UserProfileComponent } from './user/user-profile/user-profile.component
 import { CartComponent } from './shop/cart/cart.component';
 import { BuyNowComponent } from './shop/buy-now/buy-now.component';
 import { OrderPlacedComponent } from './shop/order-placed/order-placed.component';
+import { HeaderComponent } from './header/header.component';
+import { NotificationComponent } from './notification/notification.component';
 export const googleAPIKey = environment.googleAPIKey;
 
 @NgModule({
@@ -40,7 +42,9 @@ export const googleAPIKey = environment.googleAPIKey;
     UserProfileComponent,
     CartComponent,
     BuyNowComponent,
-    OrderPlacedComponent
+    OrderPlacedComponent,
+    HeaderComponent,
+    NotificationComponent
   ]
 })
 export class HomePageModule {}

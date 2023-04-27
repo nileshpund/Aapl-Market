@@ -12,6 +12,7 @@ import { UserComponent } from './user/user.component';
 import { CartComponent } from './shop/cart/cart.component';
 import { BuyNowComponent } from './shop/buy-now/buy-now.component';
 import { OrderPlacedComponent } from './shop/order-placed/order-placed.component';
+import { NotificationComponent } from './notification/notification.component';
 
 
 const routes: Routes = [
@@ -64,6 +65,10 @@ const routes: Routes = [
       {
         path:"order-placed",
         component:OrderPlacedComponent
+      },
+      {
+        path:"notification",
+        component:NotificationComponent
       }
     ]
   }

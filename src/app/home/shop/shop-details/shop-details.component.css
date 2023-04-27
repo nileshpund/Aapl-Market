@@ -6,9 +6,9 @@ ion-card-title {
   font-size: 17px;
 }
 
-ion-row {
+/* ion-row {
   margin-top: -14px;
-}
+} */
 
 .main-card {
   position: absolute;
@@ -21,20 +21,11 @@ ion-row {
   width: 100%;
 }
 
-.content-sharp {
-  border-radius: 25px 25px 20px 20px;
-  margin-top: 200px;
-}
-
 .timetext {
   margin-left: 11px;
   border-bottom: 1px solid black;
 }
 
-.image-slide {
-  width: 417px;
-  height: 240px;
-}
 
 /* .slide {
   width:95%;
@@ -91,13 +82,15 @@ ion-row {
 }
 
 .ion-text-left ion-card {
-  border-radius: 0px;
-  height: 65%;
+  /* border-radius: 0px;
+  height: 65%; */
+  background: whitesmoke;
+  color: black;
 }
 
-.favorite-items ion-col {
+/* .favorite-items ion-col {
   margin-top: -21px;
-}
+} */
 
 .favorite-items p {
   margin-left: 6px;
@@ -158,18 +151,14 @@ ion-row {
 
 .content-sharp {
   border-radius: 25px 25px 20px 20px;
-  margin-top: 200px;
-  background-color:white;
+  margin-top: 260px;
+  background-color: white;
+  height: 83px
 }
 
 .timetext {
   margin-left: 11px;
   border-bottom: 1px solid black;
-}
-
-.image-slide {
-  width: 417px;
-  height: 240px;
 }
 
 /* .slide {
@@ -287,4 +276,12 @@ ion-card {
   color: white;
   font-size: 13px;
   border-radius: 0px 0px 0px 0px;
+}
+
+.item-name {
+  text-align: center;
+}
+
+.product{
+    width: 176px;
 }
