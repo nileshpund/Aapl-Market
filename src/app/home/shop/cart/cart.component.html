@@ -1,18 +1,6 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <!-- <button style="background: white;" ion-button icon-only (click)="back()"> -->
-        <ion-icon class="h-icon" name="chevron-back-outline" (click)="back()"></ion-icon>
-      <!-- </button> -->
-    </ion-buttons>
-    <ion-buttons slot="end" large>
-      <ion-icon class="h-icon" name="cart-sharp"></ion-icon>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
+<app-header></app-header>
+
 <ion-content>
-
-
   <ion-item-divider>
     <ion-row style="margin-bottom: 8px">
       <ion-col size="11" class="user-dtls">
@@ -21,7 +9,7 @@
       </ion-col>
       <ion-col size="1">
         <!-- <ion-button  shape="round"></ion-button> -->
-        <ion-button  class="address-btn" fill="outline">Change</ion-button>
+        <ion-button class="address-btn" fill="outline">Change</ion-button>
       </ion-col>
     </ion-row>
   </ion-item-divider>
@@ -33,7 +21,8 @@
       </ion-col>
       <ion-col size="9">
         <ion-card-title class="card-name">{{items.name}}</ion-card-title><br>
-        <ion-card-subtitle class="card-price">{{items.price | currency:'INR':'symbol-narrow':'4.2-2'}}</ion-card-subtitle><br>
+        <ion-card-subtitle class="card-price">{{items.price |
+          currency:'INR':'symbol-narrow':'4.2-2'}}</ion-card-subtitle><br>
         <ion-card-subtitle class="card-size">Size: {{items.size}}</ion-card-subtitle>
         <ion-card-subtitle class="card-color">Color: {{items.colour}}<ion-card></ion-card></ion-card-subtitle><br>
         <div class="qty-selector">
@@ -91,7 +80,8 @@
         <span style="margin-left: 10px;">$1500</span>
       </ion-col>
       <ion-col size="9">
-        <ion-button (click)="orderPlaced()" style=" --background:#e97109;" class="order-btn" shape="round">Place order</ion-button>
+        <ion-button (click)="orderPlaced()" style=" --background:#e97109;" class="order-btn" shape="round">Place
+          order</ion-button>
       </ion-col>
     </ion-row>
   </ion-toolbar>

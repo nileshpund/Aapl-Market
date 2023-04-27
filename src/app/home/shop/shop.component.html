@@ -1,29 +1,5 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
 
-    <div class="addressContent">
-      <ion-row>
-        <ion-col>
-          <ion-label class="yloc current-location h-icon" routerLink="../location">{{userLocation.description || 'Loading location...'}}
-          </ion-label>
-          <ion-icon  class="chevron-down h-icon" name="chevron-down-outline"></ion-icon>
-        </ion-col>
-      </ion-row>
-    </div>
-
-    <!-- <ion-searchbar class="custom" placeholder="Search Your Product"></ion-searchbar> -->
-    <ion-buttons slot="end" large>
-      <ion-icon class="h-icon" name="cart-sharp"></ion-icon>
-    </ion-buttons>
-    <ion-buttons slot="end" large>
-      <ion-icon class="h-icon" name="notifications-sharp"></ion-icon>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
-
+<app-header></app-header>
 <ion-content>
     <app-shop-list></app-shop-list>
 </ion-content>
