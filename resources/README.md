@@ -1,8 +1,20 @@
-These are Cordova resources. You can replace icon.png and splash.png and run
-`ionic cordova resources` to generate custom icons and splash screens for your
-app. See `ionic cordova resources --help` for details.
+# Aapl-Market
 
-Cordova reference documentation:
+A local market shopping app for online orders. Users can select a radius and shop type to browse nearby shops and continue shopping seamlessly like Flipkart.
 
-- Icons: https://cordova.apache.org/docs/en/latest/config_ref/images.html
-- Splash Screens: https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-splashscreen/
+## Tech Stack
+- Angular
+- Ionic
+- Node.js
+- Firebase / REST API
+
+## Features
+✅ Radius-based shop listings  
+✅ Category/shop-type filtering  
+✅ Smooth online shopping experience  
+
+## Benefits
+✅ Users can browse and select products online from nearby shops  
+✅ Quick in-store purchase by showing product ID — saves time for both shopkeeper and customer  
+✅ Radius-based shop listings and filtering  
+✅ Seamless experience similar to Flipkart for local markets  
